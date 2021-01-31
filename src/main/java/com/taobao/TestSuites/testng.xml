@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TaobaoAutoTest" parallel="tests" Configfailurepolicy="continue" thread-count="3">
+  <test name="Test">
+    <classes>
+      <class name="com.taobao.TestCases.TMSearchTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!-- 
+  <test name="Test2">
+    <classes>
+      <class name="WebUiTest.XXX"/>
+    </classes>
+  </test>  -->
+  
+</suite> <!-- Suite -->

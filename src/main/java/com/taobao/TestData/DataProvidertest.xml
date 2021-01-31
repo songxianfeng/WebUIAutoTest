@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testdata>
+    <node1>
+        <name>孤狼</name>
+        <class>WebUI自动化测试</class>
+        <URL>https://ke.qq.com/course/451815?tuin=4fd18ae</URL>
+    </node1>
+</testdata>

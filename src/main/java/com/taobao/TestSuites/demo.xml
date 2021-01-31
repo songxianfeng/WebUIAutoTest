@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" parallel="tests" Configfailurepolicy="continue" thread-count="3">
+    <test name="TestDemo">
+      <classes>
+        <class name="com.taobao.TestCases.DataProDemo1"/>
+          <class name="com.taobao.TestCases.DataProviderTest"/>
+      </classes>
+    </test>  -->
+
+</suite> <!-- Suite -->

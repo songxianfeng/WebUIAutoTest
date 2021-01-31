@@ -1,0 +1,27 @@
+<project name="TaoBaoWebUITest" basedir="." default="transform">
+    <property name="lib.dir" value="lib" />
+	<property name="reportdir" value="${basedir}\target\surefire-reports"/>
+    <path id="test.classpath" >
+         <!-- adding the saxon jar to your classpath -->
+        <fileset dir="${lib.dir}" includes="*.jar" />
+    </path>
+	
+	<tstamp>   
+	   <format property="CURTIME" pattern="yyyyMMdd_HHmmss" locale="us"/>   <!--设置当前时间-->
+	</tstamp> 
+
+	
+    <target name="transform" >
+        <!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+        <xslt in="${reportdir}\testng-results.xml" 
+        	style="${reportdir}\testng-results.xsl"
+            out="${reportdir}\TBReports\index1.html" >
+
+             <!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+            <param name="testNgXslt.outputDir" expression="${reportdir}\TBReports" />
+        	<param name="testNgXslt.showRuntimeTotals" expression="true" />
+        	<classpath refid="test.classpath" />
+        </xslt>
+    </target>
+
+</project> 

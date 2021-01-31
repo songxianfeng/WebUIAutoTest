@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <searchgd>
+        <burl>https://www.taobao.com/</burl>
+        <skey>红酒</skey>
+        <rtitle>//h3[@class='product-title']/a</rtitle>
+    </searchgd>
+
+
+</testdata>
